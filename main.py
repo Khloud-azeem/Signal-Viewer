@@ -339,7 +339,7 @@ class Ui_MainWindow(object):
         self.widgets[self.current_widget].plotItem.showGrid(True, True, alpha=1)
         self.widgets[self.current_widget].setXRange(0, 1000)
         self.widgets[self.current_widget].plotItem.setLabel("bottom", text="Time (ms)")
-        self.widgets[self.current_widget].plot(file[0], name=name, pen = self.pens[self.current_widget])            
+        self.widgets[self.current_widget].plot(file, name=name, pen = self.pens[self.current_widget])            
 
     def plot_spectro(self,file):
         # the function that plot spectrogram of the selected signal
